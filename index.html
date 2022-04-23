@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="./app.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <img src="./images/logo.svg" alt="logo">
+    <p class="heading">We are launching soon!</p>
+    <p>Subscribe and get notified</p>
+    <form >
+      <div class="input">
+        <input type="text" placeholder="Your email address...">
+        <span id="error-msg"></span>
+      </div>
+      <div class="btn">
+        <button type="button" onclick="validation()">Notify Me</button>
+      </div>
+    </form>
+   
+    <img id="dashboard-image"src="./images/illustration-dashboard.png" alt="dashboard">
+    <div class="social">
+      <div class="icon">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
 
-  We are launching soon!
+      <div class="icon">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <div class="icon">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <footer>
+      © Copyright Ping. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
