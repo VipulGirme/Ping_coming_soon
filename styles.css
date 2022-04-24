@@ -62,10 +62,9 @@ form {
 }
 
 .input {
-    display: flex;
-    
+    display: inline-block;
     height: 3rem;
-
+    width: 250px;
 }
 
 .input input {
@@ -75,6 +74,11 @@ form {
     padding: 12px 20px;
     border-radius: 50px;
     border: 1px solid var(--primary-blue);
+}
+
+#error-msg {
+    width: 100%;
+    flex: 1;
 }
 
 .input .btn {
@@ -93,6 +97,7 @@ form {
 
 .btn {
     margin: 20px 0px;
+    width: 250px;
 }
 
 .dashboard-img {
@@ -150,9 +155,10 @@ footer {
     }
 
     .btn button {
-        width: 150px;
+        width: 100%;
     }
     .input {
         width: 500px;
+        display: inline-block;
     }
 }
