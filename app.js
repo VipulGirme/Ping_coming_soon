@@ -1,3 +1,3 @@
 const validation = (e) => {
-    console.log('Clicked');
+    console.log('Clicked')
 }
